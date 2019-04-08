@@ -57,9 +57,6 @@ class platinumDatabase():
             self.cursor.execute("UPDATE Sales_Journal SET Date_Time = ? WHERE Line_No = ?" , (newDate, date[0]))
             self.conn.commit()
 
-
-
-
 class PlatinumCor(QWidget):
     def __init__(self):
         super().__init__()
