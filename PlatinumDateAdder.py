@@ -21,7 +21,7 @@ class platinumDatabase():
         self.password = password
         self.createCursor()
         # shannon was here
-
+        # Again
 
     def createCursor(self):
         try:
