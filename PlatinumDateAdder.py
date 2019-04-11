@@ -97,10 +97,14 @@ class PlatinumCor(QWidget):
         alterCashupsButton.clicked.connect(self.alterInvoice)
         # alterCashupsButton.setDisabled(True)
 
+        # Connect to other Database
+        connectToother = QPushButton("Connect To other Database")
+
         mainGrid = QGridLayout()
         mainGrid.addWidget(addRemoveTimeInvButton, 0, 0)
         mainGrid.addWidget(alterInvoiceBUtton, 0, 1)
         mainGrid.addWidget(alterCashupsButton, 1, 0)
+        mainGrid.addWidget(connectToother, 2, 0, 1, 2)
         self.mainMenueScreen.setLayout(mainGrid)
         self.mainMenueScreen.show()
 
